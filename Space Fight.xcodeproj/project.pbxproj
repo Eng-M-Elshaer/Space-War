@@ -11,7 +11,7 @@
 		E2347412231BF4A400A547E3 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2347410231BF4A400A547E3 /* GameOverScene.sks */; };
 		E26E9A45231829BB003BC687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E9A44231829BB003BC687 /* AppDelegate.swift */; };
 		E26E9A4B231829BB003BC687 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E9A4A231829BB003BC687 /* GameScene.swift */; };
-		E26E9A4D231829BB003BC687 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E9A4C231829BB003BC687 /* GameViewController.swift */; };
+		E26E9A4D231829BB003BC687 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E9A4C231829BB003BC687 /* GameVC.swift */; };
 		E26E9A50231829BB003BC687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26E9A4E231829BB003BC687 /* Main.storyboard */; };
 		E26E9A52231829BE003BC687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26E9A51231829BE003BC687 /* Assets.xcassets */; };
 		E26E9A55231829BE003BC687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26E9A53231829BE003BC687 /* LaunchScreen.storyboard */; };
@@ -24,6 +24,7 @@
 		E26E9A6D23184DF1003BC687 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E26E9A6C23184DF1003BC687 /* spark.png */; };
 		E26E9A72231850E9003BC687 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E26E9A71231850E9003BC687 /* MenuScene.sks */; };
 		E26E9A7423185249003BC687 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E9A7323185249003BC687 /* MenuScene.swift */; };
+		E27E834025A485FA005DDFB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E833F25A485FA005DDFB0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,7 @@
 		E26E9A41231829BB003BC687 /* Space Fight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Fight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26E9A44231829BB003BC687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26E9A4A231829BB003BC687 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		E26E9A4C231829BB003BC687 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E26E9A4C231829BB003BC687 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		E26E9A4F231829BB003BC687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E26E9A51231829BE003BC687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26E9A54231829BE003BC687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		E26E9A6C23184DF1003BC687 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		E26E9A71231850E9003BC687 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		E26E9A7323185249003BC687 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		E27E833F25A485FA005DDFB0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,28 +89,23 @@
 		E26E9A43231829BB003BC687 /* Space Fight */ = {
 			isa = PBXGroup;
 			children = (
-				E26E9A51231829BE003BC687 /* Assets.xcassets */,
-				E26E9A44231829BB003BC687 /* AppDelegate.swift */,
-				E26E9A4C231829BB003BC687 /* GameViewController.swift */,
-				E26E9A4E231829BB003BC687 /* Main.storyboard */,
-				E26E9A53231829BE003BC687 /* LaunchScreen.storyboard */,
-				E26E9A7523185C66003BC687 /* Menu */,
-				E26E9A6E23185029003BC687 /* Game */,
-				E2347413231BF4A900A547E3 /* GameOver */,
-				E26E9A7023185061003BC687 /* Sounds */,
-				E26E9A6F23185052003BC687 /* Effects */,
+				E27E833125A4839C005DDFB0 /* Shared */,
+				E27E833E25A485DD005DDFB0 /* Utilities */,
+				E27E833325A48468005DDFB0 /* ViewController */,
+				E27E833C25A484ED005DDFB0 /* Resuores */,
 				E26E9A56231829BE003BC687 /* Info.plist */,
 			);
 			path = "Space Fight";
 			sourceTree = "<group>";
 		};
-		E26E9A6E23185029003BC687 /* Game */ = {
+		E26E9A6E23185029003BC687 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E26E9A4A231829BB003BC687 /* GameScene.swift */,
-				E26E9A6823184DE2003BC687 /* GameScene.sks */,
+				E26E9A7523185C66003BC687 /* MenuScene */,
+				E2347413231BF4A900A547E3 /* GameOver */,
+				E27E833725A484B4005DDFB0 /* GameScene */,
 			);
-			path = Game;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		E26E9A6F23185052003BC687 /* Effects */ = {
@@ -131,13 +128,75 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		E26E9A7523185C66003BC687 /* Menu */ = {
+		E26E9A7523185C66003BC687 /* MenuScene */ = {
 			isa = PBXGroup;
 			children = (
 				E26E9A71231850E9003BC687 /* MenuScene.sks */,
 				E26E9A7323185249003BC687 /* MenuScene.swift */,
 			);
-			path = Menu;
+			path = MenuScene;
+			sourceTree = "<group>";
+		};
+		E27E833025A48389005DDFB0 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				E26E9A51231829BE003BC687 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		E27E833125A4839C005DDFB0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E26E9A44231829BB003BC687 /* AppDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E27E833325A48468005DDFB0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E26E9A4C231829BB003BC687 /* GameVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E27E833425A48477005DDFB0 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E26E9A4E231829BB003BC687 /* Main.storyboard */,
+				E26E9A53231829BE003BC687 /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		E27E833725A484B4005DDFB0 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				E26E9A6823184DE2003BC687 /* GameScene.sks */,
+				E26E9A4A231829BB003BC687 /* GameScene.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		E27E833C25A484ED005DDFB0 /* Resuores */ = {
+			isa = PBXGroup;
+			children = (
+				E27E833425A48477005DDFB0 /* Stroyboard */,
+				E26E9A6E23185029003BC687 /* Scenes */,
+				E26E9A7023185061003BC687 /* Sounds */,
+				E27E833025A48389005DDFB0 /* Asset */,
+				E26E9A6F23185052003BC687 /* Effects */,
+			);
+			path = Resuores;
+			sourceTree = "<group>";
+		};
+		E27E833E25A485DD005DDFB0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E27E833F25A485FA005DDFB0 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +282,9 @@
 				E2347411231BF4A400A547E3 /* GameOverScene.swift in Sources */,
 				E26E9A4B231829BB003BC687 /* GameScene.swift in Sources */,
 				E26E9A7423185249003BC687 /* MenuScene.swift in Sources */,
-				E26E9A4D231829BB003BC687 /* GameViewController.swift in Sources */,
+				E26E9A4D231829BB003BC687 /* GameVC.swift in Sources */,
 				E26E9A45231829BB003BC687 /* AppDelegate.swift in Sources */,
+				E27E834025A485FA005DDFB0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
